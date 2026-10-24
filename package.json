@@ -1,0 +1,41 @@
+{
+  "name": "oc-pause-plugin",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Pause and resume OpenCode work at the next model-request boundary",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renhiyama/oc-pause-plugin.git"
+  },
+  "homepage": "https://github.com/renhiyama/oc-pause-plugin",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "pause"
+  ],
+  "exports": {
+    ".": "./index.ts",
+    "./server": "./server.ts",
+    "./tui": "./tui.tsx",
+    "./rpc": "./rpc.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun run test.ts"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": "^2.1.4",
+    "@opentui/core": ">=0.6.8",
+    "@opentui/solid": ">=0.6.8",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "2.1.4",
+    "@opentui/core": "0.6.8",
+    "@opentui/solid": "0.6.8",
+    "@types/bun": "latest",
+    "solid-js": "1.9.15",
+    "typescript": "latest"
+  }
+}
